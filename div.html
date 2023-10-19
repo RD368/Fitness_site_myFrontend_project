@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        #ss
+        {
+            height:80px;
+            width:150px;
+            background-color: red;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            
+        }
+     
+        
+
+    </style>
+</head>
+<body>
+    <div id="ss"></div>
+    <script>
+        var x=document.getElementById("ss");
+        x.addEventListener("mouseover",function ()
+        {
+          x.style.animationName="pop";
+         
+            
+        });
+        </script>
+</body>
+</html>

@@ -1,0 +1,683 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.menu {
+    color: white;
+    margin-left: 5%;
+    width: calc(100%/1.1);
+    height: 80px;
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu #menubtn{
+    padding: 4px 10px;
+    color: white;
+    background-color: transparent;
+    font-size: 1.5em;
+    z-index: -1;
+}
+.menu ul li {
+    list-style: none;
+    display: inline;
+    margin-left: 10px;
+    transition: all;
+    transition-timing-function: ease;
+    transition-duration: 0.8s;
+    transition-delay: 0.1s;
+    font-size: 1.2em;
+    font-weight: 700;
+    z-index: 1;
+}
+.menu ul li:hover {
+    text-decoration: underline;
+    text-decoration-color: orangered;
+    text-decoration-style: solid;
+    text-decoration-thickness: 3px;
+}
+
+.bgimg {
+    height: 700px;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background-image: url(homebgimg.jpg);
+    background-size: cover;
+}
+.bgimg .bgcontent {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+}
+
+.storysection video {
+    height: 350px;
+    width: 50%;
+    margin: 50px;
+    border: 1px solid black;
+}
+.storysection {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: green;
+}
+.storyright {
+    height: 400px;
+    width: 250px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+
+.workouts-section {
+    display: flex;
+    height: 300px;
+    width: 100%;
+    color: white;
+    background-color: black;
+}
+.workouts-section .workoutsleftimg {
+    height: 300px;
+    width: 40%;
+    background-image: url(workoutsection-leftimg.jpg);
+    background-size: cover;
+}
+.workouts-section .workoutsright {
+    height: 300px;
+    width: 60%;
+}
+.workouts-section .workoutsright .boxes {
+    display: inline-block;
+    height: 150px;
+    width: 340px;
+}
+.boxes:nth-child(odd) {
+    background-color: gray;
+}
+.boxes:nth-child(even) {
+    background-color: black;
+}
+
+
+.classes {
+    display: flex;
+    height: 250px;
+    width: 100px;
+}
+.flex-imges {
+    display: inline-flex;
+    gap: 50px;
+}
+
+
+.trainersection {
+    height: 400px;
+    width: 100%;
+}
+.trainersection .trainers-imgs {
+    display: flex;
+    height: 250px;
+    width: 100%;
+    gap: 50px;
+}
+.trainersection .trainers-imgs .timg {
+    flex-wrap: wrap;
+}
+.trainersection .trainers-imgs .timg img {
+    height: 250px;
+    width: 370px;
+}
+.timg strong,
+.timg h3,
+.timg p {
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.SuccessStory {
+    height: 400px;
+    width: 100%;
+}
+.SuccessStory strong{
+    font-size: 2em; 
+    font-weight: 700;
+}
+.SuccessStory .inner-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.training-contact {
+    display: flex;
+    height: 600px;
+    width: 100%;
+    background-image: url(trainer-contact-bgimg.jpg);
+    background-size: cover;
+    color: white;
+}
+.training-contact .inner-content {
+    position: relative;
+    left: 10%;
+    top: 30%;
+    line-height: 2;
+    flex-wrap: wrap;
+}
+
+.membership-section {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    /* flex-direction: column; */
+}
+.membership-section span {
+    color: gray;
+}
+.membership-section .outer-plans-flex {
+    display: flex;
+    justify-content: space-around;
+    height: 400px;
+    width: 100%;
+}
+.membership-section .outer-plans-flex .inner-plans-flex {
+    height: 400px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.8;
+}
+.inner-plans-flex small,
+.inner-plans-flex button {
+    font-weight: 800;
+    font-size: 1em;
+    transition: all;
+    transition-duration: 0.3s;
+    transition-delay: 0.2s;
+    transition-timing-function: linear;
+}
+.inner-plans-flex button:hover {
+    background-color: orangered;
+    color: white;
+}
+.inner-plans-flex h2,
+.inner-plans-flex strong {
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.register-section {
+    display: flex;
+    border: 1px solid black;
+    height: 500px;
+    width: 90%;
+    /* margin-top: 100px;
+    margin-left: 30px; */
+    position: relative;
+    left: 30px;
+    margin-top: 10%;
+}
+.register-section .formdiv {
+    width: 60%;
+    height: 500px;
+    text-align: center;
+    margin: 5%;
+}
+.register-section .formdiv table tr td input {
+    padding: 8px 70px;
+}
+
+.register-section .formdiv table tr td button {
+    padding: 8px 90%;
+    background-color: orangered;
+    border: none;
+    color: white;
+    font-weight: 800;
+}
+.register-section .formdiv table tr td {
+    text-align: left;
+    border-collapse: separate;
+}
+.register-section .register-rightimg {
+    height: 500px;
+    width: 40%;
+    background-image: url(workoutsection-leftimg.jpg);
+    background-size: cover;
+}
+
+footer {
+    height: 400px;
+    width: 100%;
+    margin-top: 70px;
+    background-color: black;
+    color: white;
+}
+footer .contact-flex {
+    display: flex;
+    height: 150px;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer .contact-details span {
+    color: orangered;
+}
+footer .subscribe-mail {
+    height: 100px;
+    width: 80%;
+    background-image: url(trainer-contact-bgimg.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 90px;
+}
+footer .copyright {
+    margin-left: 90px;
+}
+footer .copyright,
+footer .links,
+footer .socialmedia-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .socialmedia-icons {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+footer .socialmedia-icons i {
+    gap: 5px;
+}
+footer .socialmedia-icons i:hover {
+    background-color: orangered;
+}
+
+/* hover */
+button,
+i,
+a,
+.bgimg .menu h1 {
+    cursor: pointer;
+}
+/* strong titles */
+#titles strong{
+    margin-left: 40%; 
+    font-size: 2em; 
+    font-weight: 900;
+}
+
+/* responsiveness for tablet and mobile */
+/* tablet */
+@media screen and (width< 720px) {
+    .menu {
+        margin-left: 5%;
+        width: calc(100%/1.1);
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .bgimg {
+        display: flex;
+        height: 700px;
+        width: 100%;
+        background-size: cover;
+    }
+
+    .storysection {
+        height: 800px;
+        width: 100%;
+    }
+    .storysection .storyright {
+        text-align: center;
+        margin-left: 45px;
+        word-spacing: 7px;
+    }
+    .storysection video {
+        width: 80%;
+    }
+
+    .workouts-section {
+        height: 600px;
+        width: 100%;
+        display: flex;
+    }
+    .workouts-section .workoutsleftimg {
+        height: 100%;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .workouts-section .workoutsright {
+        flex-wrap: wrap;
+        height: 600px;
+        width: 100%;
+    }
+    .workouts-section .workoutsright .boxes {
+        display: inline-block;
+        height: 150px;
+        width: 100%;
+    }
+
+    .classes {
+        display: flex;
+        height: 850px;
+        width: 100%;
+    }
+    .flex-imges {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+    .flex-imges img {
+        height: 250px;
+        width: 70%;
+    }
+
+    .trainersection {
+        height: 1000px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .trainersection .trainers-imgs {
+        display: flex;
+        height: 250px;
+        width: 70%;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    .trainersection .trainers-imgs .timg img {
+        height: 250px;
+        width: 70%;
+    }
+
+    .SuccessStory {
+        height: 600px;
+        width: 100%;
+        display: flex;
+    }
+    .SuccessStory strong{
+        font-size: 1.5em; 
+        font-weight: 700;
+    }
+    .SuccessStory .inner-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        word-wrap: break-word;
+        justify-content: center;
+        font-size: 1em;
+    }
+
+    .training-contact {
+        display: flex;
+        height: 700px;
+        width: 100%;
+    }
+    .training-contact .inner-content {
+        position: relative;
+        left: 10%;
+        top: 30%;
+        line-height: 1;
+        flex-wrap: wrap;
+    }
+
+    .membership-section {
+        display: flex;
+        text-align: center;
+    }
+    .membership-section .outer-plans-flex {
+        display: flex;
+        flex-wrap: wrap;
+        height: 1200px;
+        width: 80%;
+    }
+    .membership-section .outer-plans-flex .inner-plans-flex {
+        height: 400px;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        line-height: 1.3;
+        text-align: center;
+    }
+
+    .register-section {
+        display: flex;
+        border: 1px solid black;
+        height: 860px;
+        width: 90%;
+        /* margin-top: 100px;
+        margin-left: 30px; */
+        position: relative;
+        left: 30px;
+        margin-top: 10%;
+        flex-wrap: wrap;
+    }
+    .register-section .formdiv {
+        width: 90%;
+        height: 400px;
+        text-align: center;
+        margin: 5%;
+    }
+    .register-section .formdiv table tr td input {
+        padding: 8px 45px;
+    }
+    
+    .register-section .formdiv table tr td button {
+        padding: 8px 90%;
+        background-color: orangered;
+        border: none;
+        color: white;
+        font-weight: 800;
+    }
+    .register-section .formdiv table tr td {
+        text-align: left;
+        border-collapse: separate;
+    }
+    .register-section .register-rightimg {
+        height: 400px;
+        width: 100%;
+    }
+
+    footer {
+        height: 400px;
+        width: 100%;
+        margin-top: 70px;
+        background-color: black;
+        color: white;
+    }
+    footer .contact-flex {
+        display: flex;
+        height: 150px;
+        width: 80%;
+        align-items: center;
+        margin-left: 60px;
+        gap: 50px;
+    }
+    footer .subscribe-mail {
+        height: 100px;
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        align-items: center;
+        margin-left: 60px;
+        line-height: 20px;
+    }
+    footer .copyright {
+        margin-left: 60px;
+        flex-wrap: wrap;
+    }
+
+    /* strong titles */
+    #titles strong{
+        margin-left: 30%; 
+        font-size: 1.5em; 
+        font-weight: 700;
+    }
+}
+@media screen and (width<600px) {
+
+
+    .workouts-section {
+        display: flex;
+        height: 600px;
+        width: 100%;
+        color: white;
+        background-color: black;
+        display: inline-block;
+    }
+    .workouts-section .workoutsleftimg {
+        height: 300px;
+        width: 100%;
+    }
+    .workouts-section .workoutsright {
+        height: 300px;
+        width: 100%;
+    }
+
+    .membership-section {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    .membership-section .outer-plans-flex {
+        display: flex;
+        flex-wrap: wrap;
+        height: 1200px;
+        width: 60%;
+    }
+    .membership-section .outer-plans-flex .inner-plans-flex {
+        height: 400px;
+        width: 60%;
+    }
+
+    .register-section {
+        display: flex;
+        height: 860px;
+        width: 90%;
+        position: relative;
+        left: 30px;
+        flex-wrap: wrap;
+    }
+    .register-section .formdiv {
+        width: 90%;
+        height: 400px;
+        text-align: center;
+        margin: 5%;
+    }
+    .register-section .formdiv table tr td input {
+        padding: 8px 15px;
+    }
+    
+    .register-section .formdiv table tr td button {
+        padding: 8px 80%;
+    }
+
+    footer {
+        height: 600px;
+        width: 100%;
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 90px;
+    }
+    footer .contact-flex {
+        display: flex;
+        flex-wrap: wrap;
+        height: 150px;
+        width: 40%;
+        align-items: center;
+        margin-left: 60px;
+    }
+    footer .subscribe-mail {
+        height: 100px;
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        align-items: center;
+        margin-left: 60px;
+        line-height: 20px;
+    }
+    footer .copyright {
+        margin-left: 60px;
+        flex-wrap: wrap;
+    }
+    
+    /* strong titles */
+    #titles strong{
+        margin-left: 25%; 
+        font-size: 1.4em; 
+        font-weight: 600;
+    }
+
+    /* menu dropdown in mobile view */
+    .menu {
+       display: flex;
+       z-index: 0;
+    }
+    .menu #menubtn{
+        justify-content: right;
+        float: right;
+        border-radius: 3px;
+        border: 1px solid orangered;
+        display: block;
+        z-index: 0;
+    }
+    .menu #menubtn,.menu ul li{
+        display: inline-block;
+    }
+    .menu ul li {
+        position: relative;
+        top: 70%;
+        left: 20%;
+        display: block;
+        z-index: 1;
+        overflow-y: hidden;
+        list-style: none;  
+        height: 30px;
+        width: 100%;
+    }
+    .menu ul li:hover {
+        text-decoration: underline;
+        text-decoration-color: orangered;
+        text-decoration-style: solid;
+        text-decoration-thickness: 3px;
+        background-color: greenyellow;
+    }
+}
+
+
+/* sir teach below */
+/* #lm
+{
+    display: none;
+}
+#sas
+{
+    transition:all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    border: none;
+    
+
+    
+}
+#sas:hover #lm
+{
+    display: block;
+
+} */
