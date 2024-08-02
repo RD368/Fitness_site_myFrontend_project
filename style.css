@@ -659,25 +659,3 @@ a,
         background-color: greenyellow;
     }
 }
-
-
-/* sir teach below */
-/* #lm
-{
-    display: none;
-}
-#sas
-{
-    transition:all;
-    transition-duration: 2s;
-    transition-timing-function: linear;
-    border: none;
-    
-
-    
-}
-#sas:hover #lm
-{
-    display: block;
-
-} */
